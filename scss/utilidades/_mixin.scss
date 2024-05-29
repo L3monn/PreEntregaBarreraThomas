@@ -1,0 +1,11 @@
+@mixin estilos-bases($width, $height){
+    width: $width;
+    height: $height;
+    background-color: gray;
+}
+
+@mixin flex{
+    display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}

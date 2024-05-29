@@ -1,0 +1,333 @@
+/* Reiniciar el margen y relleno de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E0D0D;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #0a141d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li:hover {
+    background-color: #1e2b36;
+}
+
+
+/* Estilos para el main */
+main {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 2rem;
+    margin: 3rem 2rem;
+}
+
+main .img-dos, 
+main .img-cinco {
+    display: none;
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el footer */
+footer p {
+    margin-top: 3rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    main .img-cuatro {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .img-dos, 
+    main .img-cinco {
+        display: block;
+    }
+    
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        grid-template-rows: 40% 40% 20%;
+    }
+
+    main .img-uno, 
+    main .img-tres {
+        grid-row: span 2;
+    }
+
+    main .img-dos, 
+    main .img-cuatro {
+        grid-column: span 1;
+    }
+
+    main .img-cinco {
+        grid-column: span 3;
+    }
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Estilos para registro.html */
+.bodyregistro {
+    font-family: Arial, sans-serif;
+}
+
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+
+.form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.form-login p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para ofertas.html */
+.ofertas-body header {
+    margin-bottom: auto;
+}
+
+.ofertas-body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 50%);
+    margin: 4rem 1rem 1rem 1rem;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+}
+
+.item img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.item figure {
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-producto {
+    padding: 10px 20px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+h2, h6, p {
+    color: black;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-producto button {
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+}

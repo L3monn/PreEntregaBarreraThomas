@@ -1,0 +1,6 @@
+@import "../utilidades/mixin";
+
+footer{
+    @include estilos-bases(100%,0);
+    @include flex;
+}
