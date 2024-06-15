@@ -80,7 +80,7 @@ main div img {
 }
 
 
-/* registro.html */
+/* contacto.html */
 .bodyregistro {
   font-family: Arial, sans-serif;
   background-image: url("fondoformulario.png");
@@ -95,7 +95,7 @@ main div img {
 
 .form-login {
   width: 400px;
-  background: rgba(78, 77, 77, 0.9);
+  background: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad del fondo */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
   padding: 30px 40px;
@@ -155,6 +155,7 @@ main div img {
 .form-login a:hover {
   text-decoration: underline;
 }
+
 
 
 /*Mas modificaciones*/
